@@ -20,7 +20,7 @@ def chemwrite(string, chemical = "", position = 0):
 def getElements(string):
 	i = 0
 	elementList = []
-	while i < len(string):
+	while string != None and i < len(string):
 		if i + 1 < len(string) and string[i + 1] != string[i + 1].upper():
 			elementList.append(str(elements[string[i:i + 2:].upper()]))
 			i += 2
